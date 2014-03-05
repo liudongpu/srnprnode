@@ -22,6 +22,11 @@ app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+//删除掉注释信息
+app.disable('x-powered-by');
+
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
