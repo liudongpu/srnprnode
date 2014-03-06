@@ -3,6 +3,10 @@
  * GET home page.
  */
 
+var a=1;
+
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+	
+	a=a+1;
+  res.render('index', { title: 'Express'+a });
 };
