@@ -8,7 +8,7 @@ exports.index = function(req, res) {
 
 	a = a + 1;
 	
-	get_http();
+	//get_http();
 	
 	res.render('index', {
 		title : 'Express' + a
